@@ -4,5 +4,6 @@ import android.bluetooth.BluetoothDevice;
 
 public interface BluetoothConnectionListener {
     void setConnected(BluetoothDevice device);
-    void setDesconect();
+    void setDisconnected();
+    void listenerServer(byte[] dados);
 }

@@ -1,14 +1,14 @@
-package com.example.ardubluetooth.ui.leds;
+package com.example.esp32bluetooth.ui.commands;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class LedsViewModel extends ViewModel {
+public class CommandsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public LedsViewModel() {
+    public CommandsViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }
