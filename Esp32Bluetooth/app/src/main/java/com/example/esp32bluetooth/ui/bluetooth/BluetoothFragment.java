@@ -77,6 +77,7 @@ public class BluetoothFragment extends Fragment implements AdapterView.OnItemCli
                 } else if (BluetoothDevice.ACTION_FOUND.equals(action)) {
                     BluetoothDevice device = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                     if (!listDevices.contains(device)) {
+                        Log.i("ESP32", device.getAddress());
                         listDevices.add(device);
                     }
                 } else if (BluetoothDevice.ACTION_ACL_DISCONNECTED.equals(action)) {

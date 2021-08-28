@@ -25,6 +25,12 @@ public class CommandsFragment extends Fragment {
     private View root;
     private Context mContext;
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext = context;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         root = inflater.inflate(R.layout.fragment_commands, container, false);
@@ -42,6 +48,7 @@ public class CommandsFragment extends Fragment {
                 BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
                 String command = editTextCommand.getText().toString();
                 bluetoothConnection.write(command.getBytes());
+                editTextCommand.setText("");
             }
         });
 
