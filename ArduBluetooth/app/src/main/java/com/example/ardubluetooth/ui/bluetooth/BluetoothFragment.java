@@ -95,6 +95,7 @@ public class BluetoothFragment extends Fragment implements AdapterView.OnItemCli
         filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
 
         mContext.getApplicationContext().registerReceiver(receiver, filter);
+         //getContext().getApplicationContext().registerReceiver(receiver, filter);
 
         listViewDevices = root.findViewById(R.id.listViewDevices);
         listViewDevices.setOnItemClickListener(this);

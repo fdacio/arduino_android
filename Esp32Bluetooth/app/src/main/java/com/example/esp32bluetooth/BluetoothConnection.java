@@ -39,8 +39,11 @@ public class BluetoothConnection extends AsyncTask<Void, Void, BluetoothDevice> 
     @Override
     protected BluetoothDevice doInBackground(Void... params) {
         BluetoothSocket tmp = null;
+        String _uuid  = "9863bf68-8b8f-11ec-a8a3-0242ac120002";
+        String _uuid2 = "00001101-0000-1000-8000-00805F9B34FB";
         try {
-            tmp = mmDevice.createRfcommSocketToServiceRecord(UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"));
+            tmp = mmDevice.createRfcommSocketToServiceRecord(UUID.fromString(_uuid2));
+
         } catch (IOException e) {
             e.printStackTrace();
         }

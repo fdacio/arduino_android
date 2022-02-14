@@ -4,13 +4,13 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_bluetooth"
         android:icon="@drawable/ic_baseline_bluetooth_24"
-        android:title="@string/app_name"
+        android:title="@string/scan"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/action_bluetooth_disconnect"
         android:icon="@drawable/ic_baseline_bluetooth_disabled_24"
-        android:title="@string/app_name"
+        android:title="@string/disconnect"
         app:showAsAction="ifRoom|withText"/>
 
 </menu>
