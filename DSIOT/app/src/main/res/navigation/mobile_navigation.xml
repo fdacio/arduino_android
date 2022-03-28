@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_iot124">
+
+    <fragment
+        android:id="@+id/navigation_iot124"
+        android:name="br.com.daciosoftware.dsiot.ui.iot124.Iot124Fragment"
+        android:label="@string/title_iot124"
+        tools:layout="@layout/fragment_iot124" />
+
+    <fragment
+        android:id="@+id/navigation_iot125"
+        android:name="br.com.daciosoftware.dsiot.ui.iot125.Iot125Fragment"
+        android:label="@string/title_iot125"
+        tools:layout="@layout/fragment_iot125" />
+
+    <fragment
+        android:id="@+id/navigation_iot130"
+        android:name="br.com.daciosoftware.dsiot.ui.iot130.Iot130Fragment"
+        android:label="@string/title_iot130"
+        tools:layout="@layout/fragment_iot130" />
+
+    <fragment
+        android:id="@+id/navigation_iot140"
+        android:name="br.com.daciosoftware.dsiot.ui.iot140.Iot140Fragment"
+        android:label="@string/title_iot140"
+        tools:layout="@layout/fragment_iot140" />
+</navigation>
