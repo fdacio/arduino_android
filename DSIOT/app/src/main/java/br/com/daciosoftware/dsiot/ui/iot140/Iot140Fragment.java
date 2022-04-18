@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,14 +24,11 @@ public class Iot140Fragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         iot140ViewModel =
                 new ViewModelProvider(this).get(Iot140ViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_iot130, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        iot140ViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        View root = inflater.inflate(R.layout.fragment_iot140, container, false);
+        final WebView webView = root.findViewById(R.id.webviewIot140);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("http://192.168.1.140");
+
         return root;
     }
 }

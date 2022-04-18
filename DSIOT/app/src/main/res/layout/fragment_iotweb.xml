@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.iot124.Iot124Fragment">
+    tools:context=".ui.iotweb.IotWebFragment">
 
     <WebView
-        android:id="@+id/webviewIot124"
+        android:id="@+id/webviewIotWeb"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

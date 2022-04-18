@@ -3,30 +3,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_iotweb"
+        android:title="@string/title_iotweb"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
         android:id="@+id/navigation_iot124"
         android:title="@string/title_iot124"
-        android:icon="@drawable/ic_home_black_24dp"
-        app:showAsAction="always"
-        android:visible="true"/>
+        android:icon="@drawable/ic_home_black_24dp"/>
     <item
         android:id="@+id/navigation_iot125"
         android:title="@string/title_iot125"
-        android:icon="@drawable/ic_home_black_24dp"
-        app:showAsAction="always"
-        android:visible="true"/>
+        android:icon="@drawable/ic_home_black_24dp"/>
 
     <item
         android:id="@+id/navigation_iot130"
         android:title="@string/title_iot130"
-        android:icon="@drawable/ic_home_black_24dp"
-        app:showAsAction="always"
-        android:visible="true"/>
+        android:icon="@drawable/ic_home_black_24dp"/>
 
     <item
         android:id="@+id/navigation_iot140"
         android:title="@string/title_iot140"
-        android:icon="@drawable/ic_home_black_24dp"
-        app:showAsAction="always"
-        android:visible="true"/>
+        android:icon="@drawable/ic_home_black_24dp"/>
 
 </menu>

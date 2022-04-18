@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_iot124">
+    app:startDestination="@+id/navigation_iotweb">
+
+    <fragment
+        android:id="@+id/navigation_iotweb"
+        android:name="br.com.daciosoftware.dsiot.ui.iotweb.IotWebFragment"
+        android:label="@string/title_iotweb"
+        tools:layout="@layout/fragment_iotweb" />
 
     <fragment
         android:id="@+id/navigation_iot124"

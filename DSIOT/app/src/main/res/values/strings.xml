@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">DSIOT</string>
+    <string name="title_iotweb">Web</string>
     <string name="title_iot124">IOT-124</string>
     <string name="title_iot125">IOT-125</string>
     <string name="title_iot130">IOT-130</string>

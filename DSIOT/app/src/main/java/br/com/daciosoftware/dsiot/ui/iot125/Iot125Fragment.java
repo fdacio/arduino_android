@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,13 +25,9 @@ public class Iot125Fragment extends Fragment {
         iot125ViewModel =
                 new ViewModelProvider(this).get(Iot125ViewModel.class);
         View root = inflater.inflate(R.layout.fragment_iot125, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        iot125ViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        final WebView webView = root.findViewById(R.id.webviewIot125);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("http://192.168.1.125");
         return root;
     }
 }
