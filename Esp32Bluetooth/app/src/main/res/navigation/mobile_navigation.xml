@@ -17,4 +17,11 @@
         android:label="@string/title_commands"
         tools:layout="@layout/fragment_commands" />
 
+    <fragment
+        android:id="@+id/navigation_roboarm"
+        android:name="com.example.esp32bluetooth.ui.roboarm.RoboArmFragment"
+        android:label="@string/title_roboarm"
+        tools:layout="@layout/fragment_roboarm" />
+
+
 </navigation>

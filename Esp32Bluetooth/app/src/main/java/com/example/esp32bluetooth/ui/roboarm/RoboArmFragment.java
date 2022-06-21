@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -44,7 +43,7 @@ public class RoboArmFragment extends Fragment {
                     return;
                 }
                 BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
-                String command = "start";
+                String command = "A";
                 bluetoothConnection.write(command.getBytes());
             }
         });
@@ -57,7 +56,7 @@ public class RoboArmFragment extends Fragment {
                     return;
                 }
                 BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
-                String command = "stop";
+                String command = "B";
                 bluetoothConnection.write(command.getBytes());
             }
         });
@@ -70,7 +69,7 @@ public class RoboArmFragment extends Fragment {
                     return;
                 }
                 BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
-                String command = "speed1";
+                String command = "C";
                 bluetoothConnection.write(command.getBytes());
             }
         });
@@ -83,7 +82,7 @@ public class RoboArmFragment extends Fragment {
                     return;
                 }
                 BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
-                String command = "speed2";
+                String command = "D";
                 bluetoothConnection.write(command.getBytes());
             }
         });
