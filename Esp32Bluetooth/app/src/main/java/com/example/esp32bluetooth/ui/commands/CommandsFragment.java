@@ -18,7 +18,6 @@ import com.example.esp32bluetooth.R;
 
 public class CommandsFragment extends Fragment {
 
-
     private View root;
     private Context mContext;
 
