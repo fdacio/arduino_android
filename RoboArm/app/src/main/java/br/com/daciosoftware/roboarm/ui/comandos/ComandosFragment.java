@@ -1,4 +1,4 @@
-package com.example.esp32bluetooth.ui.roboarm;
+package br.com.daciosoftware.roboarm.ui.comandos;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.esp32bluetooth.BluetoothConnection;
-import com.example.esp32bluetooth.BluetoothInstance;
-import com.example.esp32bluetooth.R;
+import br.com.daciosoftware.roboarm.BluetoothConnection;
+import br.com.daciosoftware.roboarm.BluetoothInstance;
+import br.com.daciosoftware.roboarm.R;
 
-public class RoboArmFragment extends Fragment {
+public class ComandosFragment extends Fragment {
 
     private View root;
     private Context mContext;
@@ -26,9 +26,9 @@ public class RoboArmFragment extends Fragment {
         mContext = context;
     }
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        root = inflater.inflate(R.layout.fragment_roboarm, container, false);
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        root = inflater.inflate(R.layout.fragment_comandos, container, false);
 
         Button buttonStart = root.findViewById(R.id.button_start);
         Button buttonStop = root.findViewById(R.id.button_stop);
@@ -88,6 +88,5 @@ public class RoboArmFragment extends Fragment {
         });
 
         return root;
-
     }
 }

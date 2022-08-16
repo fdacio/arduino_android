@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.roboarm.RoboArmFragment">
+    tools:context=".ui.comandos.ComandosFragment">
 
     <Button
         android:id="@+id/button_start"
@@ -12,11 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/button_start"
+        android:textColor="#FFFFFF"
         app:backgroundTint="@color/teal_700"
         app:layout_constraintBottom_toTopOf="@+id/button_stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button_stop"
@@ -45,7 +47,8 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/button_speed2"
-        app:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@android:color/holo_orange_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_speed1" />
@@ -61,31 +64,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_roboarm_24" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
