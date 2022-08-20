@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <EditText
+        android:id="@+id/editTextObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:background="@drawable/border_edit"
+        android:inputType="textMultiLine|text"
+        android:lines="4"
+        android:maxLines="4"
+        android:padding="4dp"
+        android:textColorHint="@color/colorPrimary"
+        tools:targetApi="o"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null" />
+
+</LinearLayout>

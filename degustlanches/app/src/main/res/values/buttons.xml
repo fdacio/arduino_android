@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/ic_sanduiches</item>
+        <item>@drawable/ic_combos</item>
+        <item>@drawable/ic_pizzas</item>
+        <item>@drawable/ic_pasteis</item>
+        <item>@drawable/ic_bebidas</item>
+        <item>@drawable/ic_sucos_vitamias</item>
+    </array>
+    <array name="colors">
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+    </array>
+</resources>

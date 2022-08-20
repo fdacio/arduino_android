@@ -17,10 +17,8 @@ public class Iot124Fragment extends Fragment {
 
     private Iot124ViewModel iot124ViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        iot124ViewModel =
-                new ViewModelProvider(this).get(Iot124ViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        iot124ViewModel = new ViewModelProvider(this).get(Iot124ViewModel.class);
         View root = inflater.inflate(R.layout.fragment_iot124, container, false);
         final WebView webView = root.findViewById(R.id.webviewIot124);
         webView.setWebViewClient(new WebViewClient());
