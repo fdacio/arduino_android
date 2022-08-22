@@ -105,18 +105,25 @@ public class RoboArmFragment extends Fragment {
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             this.text.setText(String.format("%dº", progress));
         }
+
         @Override
-        public void onStartTrackingTouch(SeekBar seekBar) { }
+        public void onStartTrackingTouch(SeekBar seekBar) {
+
+        }
 
         @Override
         public void onStopTrackingTouch(SeekBar seekBar) {
+            sendData(seekBar);
+        }
+
+        private void sendData(SeekBar seekBar) {
             String command = "";
             if (seekBar.getId() == R.id.seekBarServoBase) {
                 command = String.format("bs%d\n", seekBar.getProgress());
             }
             if (seekBar.getId() == R.id.seekBarServoAltura) {
                 command = String.format("at%d\n", seekBar.getProgress());
-              }
+            }
             if (seekBar.getId() == R.id.seekBarServoAngulo) {
                 command = String.format("ag%d\n", seekBar.getProgress());
             }
@@ -131,5 +138,12 @@ public class RoboArmFragment extends Fragment {
             bluetoothConnection.write(command.getBytes());
         }
     }
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
+        if (BluetoothInstance.isConnected()) {
+            bluetoothConnection.write("F2".getBytes());
+        }
+    }
 }

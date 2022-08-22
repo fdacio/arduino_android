@@ -89,4 +89,13 @@ public class ComandosFragment extends Fragment {
 
         return root;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        BluetoothConnection bluetoothConnection = BluetoothInstance.getInstance();
+        if (BluetoothInstance.isConnected()) {
+            bluetoothConnection.write("F1".getBytes());
+        }
+    }
 }
